@@ -1,6 +1,6 @@
 from Sorting.util import file_to_list
 
-def selection_sort(random_list: list = file_to_list()):
+def selection_sort(random_list: list = file_to_list()) -> list:
     n = len(random_list)
     for i in range(n):
         min_index = i

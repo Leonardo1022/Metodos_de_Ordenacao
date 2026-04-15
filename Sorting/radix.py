@@ -1,6 +1,6 @@
 from Sorting.util import file_to_list
 
-def radix_sort(random_list: list = file_to_list()):
+def radix_sort(random_list: list = file_to_list()) -> list:
     bucket_list_unit = [[] for _ in range(10)] # 0 até 9
     bucket_list_decimal = [[] for _ in range(10)] # 0X até 9X
     output_list = []
