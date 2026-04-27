@@ -1,6 +1,6 @@
 import ast
 
-default_file = r"C:\Users\leona\PycharmProjects\Metodos_de_Ordenacao\Sorting\data.txt"
+default_file = r"/Sorting/1M random_list.txt"
 
 def file_to_list(data_file: str = default_file) -> list:
     with open(data_file, "r") as file:

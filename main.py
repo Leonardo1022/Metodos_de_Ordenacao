@@ -5,7 +5,7 @@ import pstats
 import Sorting
 from binary_search import binary_search
 
-opt = 2
+opt = 1
 match opt:
     case 1:
         profiler = cProfile.Profile()
@@ -35,5 +35,8 @@ match opt:
 
     case 2:
         ordered_list = Sorting.radix_sort()
-        index = binary_search(20, ordered_list, 0, len(ordered_list))
-        print(f"Número procurado: {ordered_list[index]} no index[{index}]")
+        target_list = [1, 3, 6, 8, 9, 10, 22, 59, 70, 89]
+
+        for target in target_list:
+            index = binary_search(target, ordered_list, 0, 1000)
+            print(f"Número procurado: {ordered_list[index]} no index[{index}]")
